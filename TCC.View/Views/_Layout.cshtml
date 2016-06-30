@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta name="keywords" content="H+">
+    <meta name="description" content="H+">
+    <!--[if lt IE 8]>
+        <script>
+            alert('H+已不支持IE6-8');
+        </script>
+    <![endif]-->
+    <link href="~/Styles/bootstrap.min.css?v=3.4.0" rel="stylesheet">
+    <link href="~/Styles/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Styles/animate.min.css" rel="stylesheet">
+    <link href="~/Styles/style.min.css?v=3.2.0" rel="stylesheet">
+
+    @RenderSection("head", false)
+</head>
+<body class="fixed-sidebar full-height-layout gray-bg">
+    
+    @RenderBody()
+
+    <!-- 全局js -->
+    <script src="~/Scripts/jquery-2.1.1.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js?v=3.4.0"></script>
+    <script src="~/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="~/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/plugins/layer/layer.min.js"></script>
+    <!-- 自定义js -->
+    <script src="~/Scripts/hplus.min.js?v=3.2.0"></script>
+    <script type="text/javascript" src="~/Scripts/contabs.min.js"></script>
+    <!-- 第三方插件 -->
+    <script src="~/plugins/pace/pace.min.js"></script>
+</body>
+
+</html>

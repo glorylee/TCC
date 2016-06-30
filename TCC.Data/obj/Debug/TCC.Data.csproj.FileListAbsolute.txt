@@ -1,0 +1,11 @@
+F:\Project\TCC\TCC.Data\bin\Debug\TCC.Data.dll.config
+F:\Project\TCC\TCC.Data\bin\Debug\TCC.Data.dll
+F:\Project\TCC\TCC.Data\bin\Debug\TCC.Data.pdb
+F:\Project\TCC\TCC.Data\bin\Debug\EntityFramework.dll
+F:\Project\TCC\TCC.Data\bin\Debug\EntityFramework.SqlServer.dll
+F:\Project\TCC\TCC.Data\bin\Debug\EntityFramework.xml
+F:\Project\TCC\TCC.Data\bin\Debug\EntityFramework.SqlServer.xml
+F:\Project\TCC\TCC.Data\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\Project\TCC\TCC.Data\obj\Debug\TCC.Data.csprojResolveAssemblyReference.cache
+F:\Project\TCC\TCC.Data\obj\Debug\TCC.Data.dll
+F:\Project\TCC\TCC.Data\obj\Debug\TCC.Data.pdb

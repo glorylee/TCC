@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCCModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sys_Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="MenuNo" Type="int" />
+    <Property Name="ApplicationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ParentMenuId" Type="uniqueidentifier" />
+    <Property Name="MenuOrder" Type="int" />
+    <Property Name="MenuName" Type="nvarchar" MaxLength="50" />
+    <Property Name="MenuUrl" Type="nvarchar" MaxLength="300" />
+    <Property Name="MenuIconUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="IsVisibal" Type="bit" />
+    <Property Name="IsLeaf" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="TCCModelStoreContainer">
+    <EntitySet Name="Sys_Menu" EntityType="Self.Sys_Menu" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

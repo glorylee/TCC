@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TCCModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Sys_Menu">
+    <Key>
+      <PropertyRef Name="MenuId" />
+    </Key>
+    <Property Name="MenuId" Type="Guid" Nullable="false" />
+    <Property Name="MenuNo" Type="Int32" />
+    <Property Name="ApplicationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ParentMenuId" Type="Guid" />
+    <Property Name="MenuOrder" Type="Int32" />
+    <Property Name="MenuName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MenuUrl" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="MenuIconUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="IsVisibal" Type="Boolean" />
+    <Property Name="IsLeaf" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="TCCEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sys_Menu" EntityType="Self.Sys_Menu" />
+  </EntityContainer>
+</Schema>

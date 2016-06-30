@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+@section head {
+    @RenderSection("head", false)
+}
+
+
+@*顶部区域*@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    @RenderSection("Left", false)
+</nav>
+
+
+
+@*内容区域*@
+<div id="wrapper">
+    @RenderSection("content")
+</div>
+<script id="welcome-template" type="text/x-handlebars-template">
+    @RenderSection("topContent", false)
+</script>
